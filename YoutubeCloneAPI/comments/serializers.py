@@ -7,6 +7,6 @@ class CommentSeralizer(serializers.ModelSerializer):
         model = Comment
         fields = [
             'id', 'username',
-            'time_posted', 'message', 'times_liked'
-            'times_disliked', 'video_id',
+            'time_posted', 'message', 'likes',
+            'dislikes', 'video_id',
         ]
