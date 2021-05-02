@@ -7,6 +7,6 @@ class ReplySeralizer(serializers.ModelSerializer):
         model = Reply
         fields = [
             'id', 'username',
-            'time_posted', 'message', 'times_liked'
-            'times_disliked', 'original_post',
+            'time_posted', 'message', 'likes',
+            'dislikes', 'original_post',
         ]
